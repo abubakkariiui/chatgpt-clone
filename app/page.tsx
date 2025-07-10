@@ -6,8 +6,8 @@ import {
 } from "@heroicons/react/24/outline";
 function HomePage() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen px-2 text-white">
-      <h1 className="text-5xl font-bold mb-20">ChatGpt Clone</h1>
+    <div className="flex flex-col items-center justify-center h-screen px-2 text-white bg-gradient-to-b from-[#343541] to-[#202123]">
+      <h1 className="text-5xl font-bold mb-20">ChatGPT Clone</h1>
       <div className="flex space-x-2 text-center">
         <div>
           <div className="flex flex-col items-center justify-center mb-5">
