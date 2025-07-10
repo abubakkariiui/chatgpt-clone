@@ -6,6 +6,7 @@ import { useCollection } from "react-firebase-hooks/firestore";
 import { db } from "../firebase";
 import ChatRow from "./ChatRow";
 import ModelSelection from "./ModelSelection";
+import Link from "next/link";
 import NewChat from "./NewChat";
 
 function SideBar() {
@@ -37,6 +38,9 @@ function SideBar() {
             {chats?.docs.map((chat) => (
               <ChatRow key={chat.id} id={chat.id} />
             ))}
+            <Link href="/image" className="chatRow">
+              <p className="flex-1">Image Generator</p>
+            </Link>
           </div>
         </div>
       </div>
